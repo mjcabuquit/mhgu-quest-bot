@@ -1,3 +1,4 @@
+require('dotenv').config();
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
@@ -571,4 +572,4 @@ function star11QuestCommand(receivedMessage) {
 }
 
   // Log our bot in using the token from https://discordapp.com/developers/applications/me
-  client.login('NzM0MDk2NDg0NzUyMDMxODI0.XxPwnA.Zn47VGC8b-K2fFInQYB4Ky27TjA');
+    client.login(process.env.ACCESS_TOKEN);
